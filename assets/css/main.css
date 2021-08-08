@@ -242,9 +242,67 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+.zebra{
+text-align: center;
+margin: 0 100px 0 100px;
+font-family: 'Prompt', sans-serif;
+font-size: 1.2em;
 
+}
+.aboutBody{
+position: relative;
+	text-align: center;
+	
+}
+.about-title{
+	font-size: 2em;
+}
+.about-page{
+	padding-top: 2em;
+	display: flex;
+	justify-content: center;
+	font-family: "Lato", sans-serif;
+}	
+#mountains{
+
+	width: 100%;
+}
+#about-pic{
+	display: flex;
+	align-self: center	;
+	border-radius: 40% !important;
+height: 15em;
+width: 15em;
+}
 /* Row */
-
+#aboutMe{
+	text-decoration: none;
+	margin-bottom: 3em;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	height: 40px;
+	width: 20%;
+	font-size:.7em;
+	background: #4acaa8;
+}
+#aboutMe:hover{
+	background: black;
+}
+#aboutMe a:hover{
+	color:#5ccfb1;
+}
+#bambi{
+	height: 20em;
+	width: 20em;
+	display: flex;
+	margin: 0 auto;
+}
+.about-button{
+	width: 10% !important;
+}
+#aboutMe a{
+	font-style: normal;
+	text-decoration: none !important;
+}
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -1467,7 +1525,12 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
-
+			
+			.zebra{
+				margin-left: 1.3em;
+				float: left;
+				width: 80%;
+			}
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1752,7 +1815,12 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
-
+			#mountains{
+				height: 38vh;
+			}
+			#aboutMe{
+				width: 50%;
+			}
 			.container {
 				max-width: calc(100% - 3.375em);
 			}
@@ -2062,8 +2130,8 @@ h2{
 	.image {
 		border-radius: 5px;
 		border: 0;
-		display: inline-block;
-		position: relative;
+		/* display: inline-block;
+		position: relative; */
 	}
 
 		.image[data-position] img {
@@ -2199,13 +2267,17 @@ h2{
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			 border-radius: 10%; 
+			height: 12.5em;
+			width: 100%;
 			overflow: hidden;
 		}
 
 			.image.avatar img {
-				border-radius: 100%;
-				display: block;
+						
+
+				/* display: block; */
+				height: 100%;
 				width: 100%;
 			}
 
@@ -2747,13 +2819,13 @@ h2{
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			padding: 3em;
+			padding: 1em;
 		}
 
 			#header > header .avatar {
 				display: block;
-				margin: 0 auto 2.25em auto;
-				width: 8em;
+				margin: 1.6em auto 2.3em auto;
+				width: 18em;
 			}
 
 			#header > header h1 {
